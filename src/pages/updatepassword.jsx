@@ -90,7 +90,7 @@ console.log(account.username)
                           />
                         
                         </div>
-                        <button type="submt" className="w-full px-5 py-3 border border-300 focus:outline-none" >Logout</button>
+                        <button type="submt" className="w-full px-5 py-3 border border-300 focus:outline-none" >Update</button>
   
                       </form>
                       </div>
@@ -105,8 +105,7 @@ console.log(account.username)
       
         <form action="/api/update" method="post">
 
-  <label for="password">password:</label>
-  <input type="text" id="password" name="password" />
+ 
   
 </form>
     </>

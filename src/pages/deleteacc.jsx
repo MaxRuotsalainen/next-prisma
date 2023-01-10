@@ -53,17 +53,11 @@ console.log(account.username)
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
       </Head>
       
-      <nav className="navbar bg-body-tertiary bg-dark" data-bs-theme="dark">
-  <form className="container-fluid justify-content-start">
-    <button className="btn btn-outline-success me-2" type="button">Main button</button>
-    <button className="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
-  </form>
-</nav>
-
+ 
       <form action="/api/form" method="post">
-  <label for="first">First name:</label>
+  <label for="first">Username</label>
   <input type="text" id="first" name="first" />
-  <button type="submt" className="w-full px-5 py-3 border border-yellow-300 focus:outline-none" onClick={handleLogout}>Logout</button>
+  <button type="submt" className="w-full px-5 py-3 border border-yellow-300 focus:outline-none" onClick={handleLogout}>Delete acc</button>
   
 </form>
     </div>
