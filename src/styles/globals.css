@@ -1,0 +1,436 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+
+
+.bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+	background: linear-gradient(-45deg, #a71e9e, #f705cbfe, #23a6d5, #e103e1);
+	background-size: 400% 400%;
+	animation: gradient 0s  infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.circle {
+    position: absolute;
+    z-index: -100;
+    border-radius: 50%;
+    background-color: rgb(235, 235, 235);
+    animation: flying 7s infinite ease-in;
+    opacity: 0.5;
+    bottom: -100px;
+}
+
+@keyframes flying {
+    0% {
+        bottom: -100px;
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        bottom: 1080px;
+        transform: translateX(-250px);
+    }
+}
+
+.circle:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    left: 20%;
+    animation-delay: 5s;
+}
+
+.circle:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    left: 40%;
+    animation-delay: 6s;
+}
+
+.circle:nth-child(3) {
+    width: 65px;
+    height: 65px;
+    animation-delay: 4s;
+}
+
+.circle:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    left: 80%;
+    animation-delay: 9s;
+}
+
+
+.container {
+    margin: 50px auto;
+}
+
+.container .content {
+    max-width: 42%;
+    margin-right: 30px;
+}
+
+.container .fs-5 {
+    font-size: 1.4rem !important;
+    font-weight: 200;
+}
+
+.container .text-grey {
+    color: #e8e8e8;
+}
+
+.container .text {
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.container .btn {
+    border: none;
+    box-shadow: 0 2px 3px #505050b0;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+}
+
+.container .content .btn.btn-primary {
+    color: #f2f2f2;
+    background-color: #14ca72;
+}
+
+.container .content .btn.btn-primary:hover {
+    background-color: #21a063;
+}
+
+.container .btn.btn-default {
+    background-color: #fff;
+}
+
+.container .btn.btn-default:hover {
+    background-color: #f2f2f2;
+}
+
+.container .btn img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+.container .card {
+    margin-left: 40px;
+    min-width: 320px;
+    max-width: 400px;
+    height: 800px;
+    border: none;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px #975ccfa1;
+}
+
+.container .card .card-head {
+    padding: 15px 20px;
+    overflow-x: hidden;
+    box-shadow: 0 2px 3px #1f1f1f33;
+    height: 140px;
+}
+
+.container .card .card-form {
+    height: 100%;
+    padding: 15px 20px;
+    background-color: #eeeeee;
+}
+
+.container .card .card-form .input-field {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #1f1f1f33;
+}
+
+.container .card .card-form .input-field .form-control {
+    box-shadow: none;
+    border: none;
+}
+
+.container .card .card-form .input-field input:focus::placeholder {
+    color: #fff;
+}
+
+.container .card .fs-08 {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.container .card .card-form .btn {
+    width: 100px;
+}
+
+.container .card .card-form .btn.btn.btn-primary {
+    background-color: #841be7;
+}
+
+.container .card .card-form .btn.btn.btn-primary:hover {
+    background-color: #9320ff;
+}
+#password {
+    color:blue;
+    background-color: #14ca72;
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+* {
+	box-sizing: border-box;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+
+p {
+	margin: 0;
+}
+
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgb(248, 2, 232);
+	--c2: rgb(7, 208, 253);
+}
+
+.wrapper {
+	min-width: min(40rem, 100%);
+}
+
+.box {
+	
+background-color: rgb(11, 11, 29);
+	border: 0.35rem solid;
+	padding: 3vw;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+
+}
+
+.box:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+.updateContainer {
+ 
+ 
+  justify-content:center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  max-width: 400px;
+  height: 800px;
+  border: none;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px #975ccfa1;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+    
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+@media (max-width: 767.5px) {
+    .container .content {
+        max-width: 100%;
+        margin-bottom: 30px;
+        padding: 15px;
+        margin-right: 0px;
+    }
+
+    .container .card {
+        margin-left: 0;
+    }
+
+    .bubbles {
+        display: none;
+    }
+}
+.form-card{
+    margin-top: 10%;
+ 
+}
+@media (max-width: 350px) {
+    .container .content .btn {
+        font-size: 0.8rem;
+    }
+
+    .container .card {
+        min-width: 300px;
+    }
+}
+.card2 {
+	color:#fff;
+    width: 350px;
+    border-radius: 10px;
+   background: linear-gradient(145deg, #9a40a9, #b74cc9);
+box-shadow:  20px 20px 60px #913ca0, 
+             -20px -20px 60px #c552d8;
+    border: none
+}
+
+
+
+
+.line{
+	color:#fff;
+}
+
+
+
+.profile_button{
+	color:#fff;
+	padding:10px; 
+   border:none;
+   outline:0 !important;
+border-radius: 50px;
+background: #AB47BC;
+box-shadow:  28px 28px 57px #933da2, 
+             -28px -28px 57px #c351d6;
+	
+}
+.btn-gradient {    
+    width:40%;
+    position: relative;
+    display: inline-block;
+    left:-23px;
+    background: rgba(0, 0, 0, 0.15);
+    border-top-right-radius: 60px;
+    padding: 8px 24px 8px 16px;
+    box-shadow: 2px 0px 0px 0px rgba(78, 72, 72, 0.4);
+ 
+}
+.btn-gray{
+    font-size:22px;
+    padding:0px 20px;
+    color: #fff;
+    background-color: #5a5a5a;
+    border:none;
+  
+    width:230px;
+}
+.btn-pink{
+    font-size:15px;
+    padding:0px 20px;
+    color: #fff;
+    background-color: #f1131398;
+    border: 3px solid red;
+ 
+    justify-content: center;
+    align-items: center;
+   
+    width:230px;
+}
+.btn-text{
+    width:60%;
+}
+
+.btn-gradient i{
+  font-size:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.fa-close{
+ 
+}
+.btn-pink:hover .fa-close{
+    animation-name: bounce;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  .btn-gray:hover .fa-gear{
+    animation-name: bounce;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+
+  @keyframes bounce {
+    0%   {scale:1;}
+    25%   {scale:1.2;}
+  50% {scale:1; -webkit-transform: rotate(180deg); }
+  75%   {scale:1.2;}
+  100% {scale:1;}
+  }
+  .tablePic{
+    height: 30px;
+  }
